@@ -108,14 +108,25 @@ header {
   text-align: center;
 }
 
-header a:first-child {
+.navButton, header nav ul li a {
+  font: 14px "OpenSansSemiBold", sans-serif;
+
+}
+.navButton {
   background-color: white;
   position: absolute;
   top: 10px;
-  left: 13px;
+  left: 10px;
   border-radius: 4px;
-  font: 1em "OpenSansSemiBold", sans-serif;
-  padding: 8px;
+  font-size: 14px;
+  padding: 11px 10px;
+  color: #f56b2a;
+  text-decoration: none;
+}
+
+.navButton:hover {
+  background: #ccc;
+  color: #3873bd;
 }
 
 header a img {
@@ -126,16 +137,75 @@ header ul, aside {
   display: none;
 }
 
+.navHiddenMobile {
+  display: none;
+}
 
 
 
 
 
+/*#######################################
+------------ Responsive ----------------
+########################################*/
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
 
+}
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
 
+}
 
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+  header {
+    display: flex;
+  }
+  .navButton, .navHidden {
+    display: none;
+  }
+
+  .navHiddenMobile {
+    display: inline-block;
+  }
+
+  header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 60px;
+    height: 60px;
+    justify-content: space-around;
+  }
+
+  header li {
+    list-style-type: none;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul li a {
+    display: block;
+    min-height: 60px;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
 
 
 
