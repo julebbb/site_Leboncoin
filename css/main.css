@@ -106,6 +106,9 @@ header {
   background-color: #f56b2a;
   min-height: 60px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navButton, header nav ul li a {
@@ -164,6 +167,7 @@ header ul, aside {
 
   header {
     display: flex;
+    padding: 0 1%;
   }
   .navButton, .navHidden {
     display: none;
@@ -179,10 +183,22 @@ header ul, aside {
     padding: 0;
     min-height: 60px;
     height: 60px;
-    justify-content: space-around;
+  }
+
+  .connecter {
+    position: absolute;
+    right: 5%;
+    border-right: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+  }
+
+  .connecter a {
+    font-size: 10px;
+    text-transform: initial;
   }
 
   header li {
+    padding: 0 15px;
     list-style-type: none;
   }
 
