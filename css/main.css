@@ -113,7 +113,7 @@ header {
   width: 100%;
 }
 
-.navButton, header nav ul li a {
+.navButton, header nav ul li a, .indexLeft a {
   font: 14px "OpenSansSemiBold", sans-serif;
 
 }
@@ -163,6 +163,7 @@ header ul, aside {
 
 .indexLeft article h1 {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 h1, .connecter a, .indexLeft a {
@@ -175,10 +176,78 @@ h1, .connecter a, .indexLeft a {
 
 .indexLeft a {
   display: block;
-  margin: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 40px;
+  width: 290px;
+  height: 40px;
+  background: #4183d7;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.indexLeft a:last-child {
+  background: transparent;
+  border: 1px solid #4183d7;
+  color:  #4183d7;
+}
+
+.fas, .indexLeft img {
+  display: none;
+}
+
+.indexLeft a:hover {
+  background: #4c94ef;
+}
+
+.indexLeft a:hover:last-child {
+  background: #d9e6f7;
+}
+
+.map img{
+  width: 90%;
+  display: block;
+  margin: auto;
+  min-height: 330px;
+  max-width: 410px;
+}
+
+#departementTabMob {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  background: #ffffff url(//static.leboncoin.fr/img/arrow-select.png) no-repeat right;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+footer nav {
+  display: block;
+}
+
+.hidden, #selectPays {
+  display: none;
+}
+
+.map p {
+  text-align: center;
+  font-size: 12px;
   padding: 10px;
 }
 
+.map p a {
+  text-decoration: none;
+  color: #369;
+  font-family: "OpenSansSemiBold",sans-serif;
+}
+
+.map p a:hover {
+  text-decoration: underline;
+}
 
 
 /*#######################################
@@ -256,7 +325,12 @@ h1, .connecter a, .indexLeft a {
     text-transform: uppercase;
     text-decoration: none;
   }
+
+  #departementTabMob {
+    display: none;
+  }
 }
+
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
