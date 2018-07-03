@@ -174,7 +174,7 @@ h1, .connecter a, .indexLeft a {
   display: block;
 }
 
-.indexLeft a {
+.indexLeft div a {
   display: block;
   margin: auto;
   margin-bottom: 20px;
@@ -194,7 +194,7 @@ h1, .connecter a, .indexLeft a {
   color:  #4183d7;
 }
 
-.fas, .indexLeft img {
+.fas, .cible {
   display: none;
 }
 
@@ -233,13 +233,13 @@ footer nav {
   display: none;
 }
 
-.map p {
+.mapSelect  {
   text-align: center;
   font-size: 12px;
   padding: 10px;
 }
 
-.map p a {
+.mapSelect a {
   text-decoration: none;
   color: #369;
   font-family: "OpenSansSemiBold",sans-serif;
@@ -249,19 +249,61 @@ footer nav {
   text-decoration: underline;
 }
 
+.navFooter, .footerTop, .join span {
+  display: none;
+}
 
+.join {
+  display: flex;
+  justify-content: space-between;
+  background: #474747;
+  color: white;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.join p:first-child {
+  line-height: 40px;
+}
+
+.join a {
+  font-size: 30px;
+  padding: 0 5px;
+  color: darkslateblue;
+}
+
+
+.join a:last-child {
+  color: deepskyblue;
+}
 /*#######################################
 ------------ Responsive ----------------
 ########################################*/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
+@media (min-width: 481px) {
+  .fas, .cible {
+    display: inline;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    height: 535px;
+  }
 
+  .indexLeft {
+    width: 50%;
+  }
+
+  .indexLeft div a {
+    width: 100%;
+  }
+ aside {
+   display: block;
+ }
 }
 
 /* Large devices (desktops, 992px and up)*/
